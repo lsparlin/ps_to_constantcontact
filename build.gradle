@@ -1,5 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = "com.lewismsparlin.cctool.CCToolApplication"
 
 repositories {
 	mavenCentral()
@@ -7,6 +10,7 @@ repositories {
 
 dependencies {
  	compile "org.jsoup:jsoup:1.8.3"
+ 	compile "com.google.guava:guava:18.0"
 
 	testCompile "junit:junit-dep:4.10"
 }
